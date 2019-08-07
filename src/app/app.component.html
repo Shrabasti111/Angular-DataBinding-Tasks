@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<p>Hey there</p>
+
+<p>Enter text : <input #textEntered type = "text"></p>
+<button (click) = printText(textEntered.value)>Enter</button>
+
+<app-child1 [textdata] = "textdata">
+</app-child1>
+<router-outlet></router-outlet>
+
