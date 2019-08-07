@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<app-child (textData)="printingData($event)"></app-child>
+
+<p>This is Parent component</p>
+{{dataToBePrinted}}
+<router-outlet></router-outlet>
